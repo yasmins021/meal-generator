@@ -1,0 +1,185 @@
+:root {
+  --font-family:  'Delius', cursive;
+   }
+
+body {
+  background-image: url("images/sky.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  min-height: 100vh;
+    }
+    .kitty {
+      width: 10rem;
+      position: fixed;
+      top: 10px;
+      left: 30px; /* or right: 0; */
+    }
+
+    .cupcake {
+  width: 23rem;
+  margin-top: auto;
+  }
+
+   h1 {
+   text-align: center;
+   }
+
+   * {
+  box-sizing: border-box;
+    }
+
+   ul {
+    list-style-image: url("https://sadgrl.online/images/lyts/not-mine/hearth_rosa.gif");
+   padding-left: 100px;
+   font-family:var( --font-family);
+    } 
+
+    p {
+  
+ padding-left: 60px;
+ font-family:var( --font-family);
+
+    }
+
+  h3 {
+
+ margin:auto;
+  }
+h4{
+  margin-left: 40px;
+}
+  h5 {
+  margin-left: 90px ;
+  font-size: 20px;
+  font-family:var( --font-family);
+  
+  }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* hide any overflowing content */
+    margin-left: 100px;
+ }
+ 
+ .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+ }
+ 
+
+ .border-image {
+ 
+margin-left:50px;
+
+
+}
+
+    .meal {
+   margin: 10px 0;
+   }
+
+    .meal-info {
+   display: flex;
+   flex-direction: row;
+   padding-right: 100px;
+   font-family:var( --font-family);
+
+    }
+
+    .meal-info img {
+      margin-right: 20px;
+      width: 22rem;
+      border-style: double;
+      border-color: #ec85ea;
+      border-width: 10px;
+   }
+   
+
+    .container {
+   margin-left: 50px;
+    }
+
+  .text-center {
+  text-align: center;
+    }
+  /* Button CSS */
+   #get-meal {
+   background-color: #eb75a3;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 200px; 
+    height: 60px;
+    line-height: 20px;
+   list-style: none;
+    margin: 0 auto;
+   outline: none;
+    padding: 10px 16px;
+   position: relative;
+    text-align: center;
+   text-decoration: none;
+    transition: color 100ms;
+     user-select: none;
+  -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+
+  #get-meal:hover,
+  #get-meal:focus {
+  background-color: #F082AC;
+  }
+
+  /* Media queries */
+  @media screen and (max-width: 767px) {
+  .cupcake {
+    margin-top: 50px;
+    width: 50%;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #get-meal {
+    width: 50%;
+    height: 50px;
+    font-size: 18px;
+    margin: 10px auto;
+  }
+  
+  .meal-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .meal-info img {
+ margin-left: 90px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    width: 90%;
+    height:90%;
+  }
+  
+  .videoWrapper iframe {
+    width: 80%;
+    height: 80%;
+
+  }
+}
